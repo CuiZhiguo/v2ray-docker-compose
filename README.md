@@ -5,7 +5,8 @@
 2. 可以从 [免费域名](https://www.freenom.com/zh/freeandpaiddomains.html) 申请一个域名然后通过 [acme.sh](https://github.com/Neilpang/acme.sh/wiki/%E8%AF%B4%E6%98%8E)，申请证书；
 3. 域名和证书下载后后缀不变，重命名为 **v2ray** 然后拷贝到 `./nginx/certs` 目录下；
 4. 改变 `./nginx/conf.d/v2ray.conf` [第 8 行](https://github.com/wubaiqing/v2ray-docker-compose/blob/master/nginx/conf.d/v2ray.conf#L8)域名地址；
-5. 使用 `docker compose up -d` 启动服务；
+5. 使用 `docker-compose up -d` 启动服务(进入到docker-compose.yml文件夹)；
+6. 如果需要停止，则使用`docker-compose stop`
 
 ### 客户端
 1. 从 [神一样的工具们](https://www.v2ray.com/awesome/tools.html) 下载当前环境的客户端；
